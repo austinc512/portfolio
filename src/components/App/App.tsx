@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg';
 import './App.css';
 import Nav from '../Nav/Nav';
+import Content from '../content/Content';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Nav />
+      <Content />
     </>
   );
 }

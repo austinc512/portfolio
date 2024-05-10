@@ -1,33 +1,61 @@
-nav {
-  width: 100%;
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/e/ed/Nyan_cat_250px_frame.PNG');
+  height: 200vh;
 }
 
-ul {
+.nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.nav > * {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.navlist {
   list-style-type: none;
   margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  /* height: 100px; */
+  /* background-color: #000000; */
+
+  /* height: 50px; */
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  flex-grow: 5;
 }
 
-li {
+.item {
   /* float: right; */
   /* color: red; */
   display: block;
-  color: white;
+  /* color: white; */
   text-align: center;
-  padding: 14px 16px;
+  padding: 0 10px;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
-li:hover {
-  background-color: #111;
+.item:hover {
+  background-color: #3d3d3d;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  border-radius: 30px;
 }
 
-ul > * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.name {
+  font-size: 1.5em;
+  margin: none;
+  padding: none;
 }

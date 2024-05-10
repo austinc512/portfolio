@@ -2,11 +2,14 @@ import './Nav.css';
 
 const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>option 1</li>
-        <li>option 2</li>
-        <li>option 3</li>
+    <nav className="nav">
+      <h1 className="name">Austin Covey</h1>
+      <ul className="navlist">
+        <li className="item">About</li>
+        <li className="item">Skills</li>
+        <li className="item">Projects</li>
+        <li className="item">Contact</li>
+        <li className="item">Resume</li>
       </ul>
     </nav>
   );
